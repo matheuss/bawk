@@ -1,11 +1,11 @@
 # bawk
 `awk`, but better
 
-# Why?
+## Why?
 
 I got sick of writing `awk '{print $1}'` all day long :expressionless:
 
-# Installation
+## Installation
 
 [Install `import`](https://import.pw/importpw/import/docs/install.md) and then add the following to your `.zshrc`/`.bashrc`/etc:
 
@@ -13,7 +13,17 @@ I got sick of writing `awk '{print $1}'` all day long :expressionless:
 import matheuss/bawk
 ```
 
-# Usage
+## Example
+
+```shell
+#!/usr/bin/import
+import matheuss/bawk
+
+# get the first "word"
+echo a b c | bawk 1
+```
+
+## Usage
 
 ```shell
 ▲ ~ cat > test.txt <<EOF
